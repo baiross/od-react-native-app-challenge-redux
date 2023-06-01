@@ -34,7 +34,7 @@ Below you'll find information about performing common tasks. The most recent ver
 This code challenge will test your:
 
 - Ability to think on the spot
-- Communication skills and ability to talk through their code with others
+- Communication skills and ability to talk through your code with others
 - Logical thought processes
   The coding challenge has been designed to be accomplished within a time frame of 8 hours. While the initial evaluation of the work achieved will be based on the first 8 hours, we encourage developers to extend their effort and strive to complete the task beyond this duration. It should be noted that the successful completion of the task is not a prerequisite for a successful interview, but we do acknowledge and appreciate the extra effort put forth towards its completion.
 
@@ -56,6 +56,10 @@ Please contact: domenico@orangedigital.com.au if any questions.
 ![App Expenses](https://bitbucket.org/orangedigital/od-react-native-app-challenge/raw/a24689592b271830103f747fb9fd4b4e88df3952/assets/expenses.png)
 ![App Espenses all Categories](https://bitbucket.org/orangedigital/od-react-native-app-challenge/raw/a24689592b271830103f747fb9fd4b4e88df3952/assets/expenses%20all%20categories.png)
 
+## REDUX Store 
+
+Please use REDUX as store management, create a Redux to consume this api https://automation.orangedigital.au/api/od/challenge/react/redux/challenge-endpoint. 
+You need to demonstrate the knowledge aroud the REDUX life cycle and the understanding of the state management and state debug. 
 
 
 ## Updating to New Releases
