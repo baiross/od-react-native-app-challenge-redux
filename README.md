@@ -58,7 +58,7 @@ Please contact: domenico@orangedigital.com.au if any questions.
 
 ## REDUX Store 
 
-Please use REDUX as store management, create a Redux to consume this api https://automation.orangedigital.au/api/od/challenge/react/redux/challenge-endpoint. 
+Please use REDUX as state management library, create a Redux to consume this api https://automation.orangedigital.au/api/od/challenge/react/redux/challenge-endpoint. 
 You need to demonstrate the knowledge aroud the REDUX life cycle and the understanding of the state management and state debug. 
 
 
