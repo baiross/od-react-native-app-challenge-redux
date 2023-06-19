@@ -1,10 +1,8 @@
 export type RootStackParamList = {
-  Root: undefined;
+  mainStack: undefined;
 };
 
 export type RootTabParamList = {
   homeTab: undefined;
-  vesselTab : undefined;
-  profileTab: undefined;
-  settingsTab: undefined;
+  authorsTab : undefined;
 };

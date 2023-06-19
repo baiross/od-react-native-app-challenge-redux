@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import {View, Text} from 'react-native'
 import { Provider, useDispatch, useSelector } from 'react-redux';
-import useCachedResources from './hooks/useCachedResources';
 import { fetchData } from './libraries/actions/settingsAction';
-import { orangeStore } from './libraries/orangeStore';
+// import { orangeStore } from './libraries/orangeStore';
 import Navigation from './navigation';
-import LoadingScreen from './screens/Global/LoadingScreen';
 
 export default function App() {
-  const isLoadingComplete = useCachedResources();
 
   // const { settingsData } = useSelector((state) => state.settingsData);
   
@@ -19,17 +17,12 @@ export default function App() {
 
   // console.log(settingsData);
 
-
-  if (!isLoadingComplete) {
-    return (
-      <LoadingScreen />
-    )
-  } else {
-    return (
-      <Provider store={orangeStore}>
-        <Navigation />
-        <StatusBar style="auto" />
-      </Provider>
-    );
-  }
+  return (
+    // <Provider store={orangeStore}>
+    <>
+      <Navigation />
+      <StatusBar style="auto" />
+    </>
+    // </Provider>
+  );
 }
