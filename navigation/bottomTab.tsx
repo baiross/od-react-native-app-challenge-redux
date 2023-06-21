@@ -5,6 +5,7 @@ import { RootTabParamList } from '../types'
 import { HomeScreen, AuthorsScreen } from '../src/screens'
 import { AUTHORS_TAB, HOME_TAB } from '../src/routes/app.routes'
 import Colors from '../constants/Colors'
+import AuthorStackNavigator from './authorStack'
 
 export default function BottomTabNavigator () {
 const BottomTab = createBottomTabNavigator<RootTabParamList>()
@@ -32,9 +33,9 @@ const BottomTab = createBottomTabNavigator<RootTabParamList>()
       />
       <BottomTab.Screen
         name={AUTHORS_TAB}
-        component={AuthorsScreen}
+        component={AuthorStackNavigator}
         options={{
-          title: 'Authors',
+          headerShown: false,
           tabBarIcon: ({ focused }) => <Ionicons name="ios-people" color={focused ? Colors.primary : Colors.primary50} size={23} />,
           headerStyle: {backgroundColor: Colors.primary},
           headerTintColor: Colors.white,

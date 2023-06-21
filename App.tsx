@@ -1,28 +1,14 @@
+import 'react-native-gesture-handler'
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import {View, Text} from 'react-native'
-import { Provider, useDispatch, useSelector } from 'react-redux';
-import { fetchData } from './libraries/actions/settingsAction';
-// import { orangeStore } from './libraries/orangeStore';
+import { Provider } from 'react-redux';
 import Navigation from './navigation';
+import store from './src/store';
 
 export default function App() {
-
-  // const { settingsData } = useSelector((state) => state.settingsData);
-  
-  // useEffect(() => {
-  //   const dispatch = useDispatch()
-  //   dispatch(fetchData())
-  // }, [])
-
-  // console.log(settingsData);
-
   return (
-    // <Provider store={orangeStore}>
-    <>
+    <Provider store={store}>
       <Navigation />
       <StatusBar style="auto" />
-    </>
-    // </Provider>
+    </Provider>
   );
 }
